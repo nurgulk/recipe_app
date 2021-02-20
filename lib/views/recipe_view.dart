@@ -44,8 +44,8 @@ class _RecipeViewState extends State<RecipeView> {
                 decoration: BoxDecoration(
                     gradient: LinearGradient(
                         colors: [
-                          const Color(0xff213A50),
-                          const Color(0xff071930)
+                          const Color(0xff0e97bf),
+                          const Color(0xff155fc9)
                         ],
                         begin: FractionalOffset.topRight,
                         end: FractionalOffset.bottomLeft)),
@@ -55,7 +55,7 @@ class _RecipeViewState extends State<RecipeView> {
                       : MainAxisAlignment.center,
                   children: <Widget>[
                     Text(
-                      "AppGuy",
+                      "Nurgül's",
                       style: TextStyle(
                           fontSize: 18,
                           color: Colors.white,
@@ -65,7 +65,7 @@ class _RecipeViewState extends State<RecipeView> {
                       "Recipes",
                       style: TextStyle(
                           fontSize: 18,
-                          color: Colors.blue,
+                          color: Colors.white,
                           fontFamily: 'Overpass'),
                     )
                   ],

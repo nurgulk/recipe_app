@@ -14,7 +14,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   List<RecipeModel> recipies = new List();
-  String ingridients;
+  String ingredients;
   bool _loading = false;
   String query = "";
   TextEditingController textEditingController = new TextEditingController();
@@ -101,7 +101,7 @@ class _HomeState extends State<Home> {
                                 color: Colors.white,
                                 fontFamily: 'Overpass'),
                             decoration: InputDecoration(
-                              hintText: "Enter Ingridients",
+                              hintText: "Enter Ingredients",
                               hintStyle: TextStyle(
                                   fontSize: 16,
                                   color: Colors.white.withOpacity(0.6),
@@ -126,7 +126,7 @@ class _HomeState extends State<Home> {
                                 });
                                 recipies = new List();
                                 String url =
-                                    "https://api.edamam.com/search?q=${textEditingController.text}&app_id=0f21d949&app_key=8bcdd93683d1186ba0555cb95e64ab26";
+                                    "https://api.edamam.com/search?q=${textEditingController.text}&app_id=6d9f569c&app_key=653cc1203626637649213aebb5f55b6b";
                                 var response = await http.get(url);
                                 print(" $response this is response");
                                 Map<String, dynamic> jsonData =
